@@ -38,6 +38,7 @@ type Config struct {
 	NetworkServices       []url.URL     `default:"" desc:"A list of Network Service Requests" split_words:"true"`
 	LogLevel              string        `default:"INFO" desc:"Log level" split_words:"true"`
 	OpenTelemetryEndpoint string        `default:"otel-collector.observability.svc.cluster.local:4317" desc:"OpenTelemetry Collector Endpoint"`
+	MetricsExportInterval time.Duration `default:"10s" desc:"interval between mertics exports" split_words:"true"`
 
 	Port       uint16            `default:"" desc:"TCP/UDP service port" split_words:"true"`
 	TargetPort uint16            `default:"" desc:"TCP/UDP target port" split_words:"true"`
