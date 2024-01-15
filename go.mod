@@ -8,9 +8,9 @@ require (
 	github.com/edwarnicke/grpcfd v1.1.2
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/networkservicemesh/api v1.11.1-0.20231031152153-730abd666985
-	github.com/networkservicemesh/govpp v0.0.0-20231225111845-22983cadafe7
+	github.com/networkservicemesh/govpp v0.0.0-20240115135805-9d7177f85ad9
 	github.com/networkservicemesh/sdk v0.5.1-0.20240111113458-792b7fb5104e
-	github.com/networkservicemesh/sdk-vpp v0.0.0-20240111114255-6f452c26d413
+	github.com/networkservicemesh/sdk-vpp v0.0.0-20240115150919-702ef78c5b77
 	github.com/networkservicemesh/vpphelper v0.0.0-20230901145133-a14aecebd1cb
 	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.9.3
@@ -56,7 +56,7 @@ require (
 	github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415 // indirect
 	github.com/yashtewari/glob-intersection v0.1.0 // indirect
 	github.com/zeebo/errs v1.2.2 // indirect
-	go.fd.io/govpp v0.9.0-alpha.0.20231212074705-4ae974bc6248 // indirect
+	go.fd.io/govpp v0.10.0-alpha.0.20240110141843-761adec77524 // indirect
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.46.0 // indirect
 	go.opentelemetry.io/otel v1.20.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc v0.43.0 // indirect
