@@ -8,9 +8,9 @@ require (
 	github.com/edwarnicke/grpcfd v1.1.2
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/networkservicemesh/api v1.11.1-0.20231031152153-730abd666985
-	github.com/networkservicemesh/govpp v0.0.0-20240130152300-43babf54855b
+	github.com/networkservicemesh/govpp v0.0.0-20240228164121-2d825c8bae53
 	github.com/networkservicemesh/sdk v0.5.1-0.20240212105149-b1a3e26da857
-	github.com/networkservicemesh/sdk-vpp v0.0.0-20240220094218-e132a822aad6
+	github.com/networkservicemesh/sdk-vpp v0.0.0-20240228175616-e7592dedeb7d
 	github.com/networkservicemesh/vpphelper v0.0.0-20230901145133-a14aecebd1cb
 	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.9.3
