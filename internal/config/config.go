@@ -1,5 +1,7 @@
 // Copyright (c) 2023 Cisco and/or its affiliates.
 //
+// Copyright (c) 2024 OpenInfra Foundation Europe. All rights reserved.
+//
 // SPDX-License-Identifier: Apache-2.0
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +39,7 @@ type Config struct {
 	MaxTokenLifetime      time.Duration `default:"10m" desc:"maximum lifetime of tokens" split_words:"true"`
 	NetworkServices       []url.URL     `default:"" desc:"A list of Network Service Requests" split_words:"true"`
 	LogLevel              string        `default:"INFO" desc:"Log level" split_words:"true"`
-	OpenTelemetryEndpoint string        `default:"otel-collector.observability.svc.cluster.local:4317" desc:"OpenTelemetry Collector Endpoint"`
+	OpenTelemetryEndpoint string        `default:"otel-collector.observability.svc.cluster.local:4317" desc:"OpenTelemetry Collector Endpoint" split_words:"true"`
 	MetricsExportInterval time.Duration `default:"10s" desc:"interval between mertics exports" split_words:"true"`
 
 	Port       uint16            `default:"" desc:"TCP/UDP service port" split_words:"true"`
