@@ -33,6 +33,8 @@ docker build .
 * `NSM_TARGET_PORT`             - TCP/UDP target port
 * `NSM_PROTOCOL`                - TCP or UDP protocol
 * `NSM_SELECTOR`                - labels for the load balancer selector labels
+* `NSM_PPROF_ENABLED`           - is pprof enabled (default: "false")
+* `NSM_PPROF_LISTEN_ON`         - pprof URL to ListenAndServe (default: "localhost:6060")
 
 # Testing
 
