@@ -1,4 +1,4 @@
-// Copyright (c) 2023 Cisco and/or its affiliates.
+// Copyright (c) 2023-2024 Cisco and/or its affiliates.
 //
 // SPDX-License-Identifier: Apache-2.0
 //
@@ -60,6 +60,7 @@ import (
 	"github.com/networkservicemesh/sdk/pkg/tools/log/logruslogger"
 	"github.com/networkservicemesh/sdk/pkg/tools/nsurl"
 	"github.com/networkservicemesh/sdk/pkg/tools/opentelemetry"
+	"github.com/networkservicemesh/sdk/pkg/tools/pprofutils"
 	"github.com/networkservicemesh/sdk/pkg/tools/spiffejwt"
 	"github.com/networkservicemesh/sdk/pkg/tools/token"
 	"github.com/networkservicemesh/sdk/pkg/tools/tracing"
@@ -126,6 +127,13 @@ func main() {
 				log.FromContext(ctx).Error(err.Error())
 			}
 		}()
+	}
+
+	// ********************************************************************************
+	// Configure pprof
+	// ********************************************************************************
+	if c.PprofEnabled {
+		go pprofutils.ListenAndServe(ctx, c.PprofListenOn)
 	}
 
 	// ********************************************************************************
