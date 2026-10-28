@@ -1,5 +1,7 @@
 // Copyright (c) 2023-2024 Cisco and/or its affiliates.
 //
+// Copyright (c) 2026 Nordix Foundation.
+//
 // SPDX-License-Identifier: Apache-2.0
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -264,12 +266,12 @@ func main() {
 			},
 		})
 		if err != nil {
-			log.FromContext(ctx).Fatalf("error from monitorConnectionClient", err.Error())
+			log.FromContext(ctx).Fatalf("error from monitorConnectionClient: %v", err.Error())
 		}
 
 		event, err := stream.Recv()
 		if err != nil {
-			log.FromContext(ctx).Errorf("error from monitorConnection stream", err.Error())
+			log.FromContext(ctx).Errorf("error from monitorConnection stream: %v", err.Error())
 		} else {
 			monitoredConnections = event.Connections
 		}
